@@ -1,0 +1,33 @@
+=<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate instagram selebgram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Rate instagram selebgram</h2>
+        <form method="POST">
+            <label>Jumlah Suka:</label>
+            <input type="number" name="Like" required>
+
+            <label>Jumlah Komentar:</label>
+            <input type="number" name="Comment" required>
+
+            <label>Jumlah Bagikan:</label>
+            <input type="number" name="Share" required>
+
+            <label>Total Pengikut:</label>
+            <input type="number" name="Follower" required>
+
+            <button type="submit">Hitung</button>
+        </form>
+
+        {% if er is defined and er is not none %}
+            <h3>Engagement Rate: {{ er }}%</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
