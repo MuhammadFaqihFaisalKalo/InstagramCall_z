@@ -1,3 +1,3 @@
-Nama: Muh Faqih Faisal Kalo
+Nama: Zico Ayrton Kahfi
 Kelas: A
-Nim: 240907502004
+Nim: 240907501009
